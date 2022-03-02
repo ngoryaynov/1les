@@ -8,6 +8,111 @@
   margin: 0 auto;
 }
 
+@-webkit-keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%, 55%, 75%, 87% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%, 55%, 75%, 87% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+.bounce-top {
+  -webkit-animation: bounce-top .9s both;
+          animation: bounce-top .9s both;
+}
+
 .centr {
   margin: 0 auto;
 }
@@ -1135,6 +1240,53 @@ summary {
   -webkit-box-shadow: 15px 15px 18px rgba(0, 0, 0, 0.16);
           box-shadow: 15px 15px 18px rgba(0, 0, 0, 0.16);
   margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.cart_block > .tovar > .text {
+  padding-top: 22px;
+  padding-left: 30px;
+}
+
+.cart_block > .tovar > .text > .name {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+  margin-bottom: 42px;
+}
+
+.cart_block > .tovar > .text > .prop {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+  margin-bottom: 6px;
+}
+
+.quantity {
+  width: 45px;
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 22px;
+  color: #656565;
+  border: 1px solid #EAEAEA;
+}
+
+.cart_block > .tovar > .text > .prop > .price {
+  color: #E05C6E;
+}
+
+.cart_block > .tovar > .close {
+  position: absolute;
+  top: 28px;
+  right: 22px;
 }
 
 .cart_block > .button_block {
@@ -1145,6 +1297,24 @@ summary {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.cart_block > .button_block > a {
+  text-decoration: none;
+}
+
+.cart_block > .button_block > a > .button {
+  border: 1px solid #A4A4A4;
+  padding: 16px 30px;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.cart_block > .button_block > a > .button:hover {
+  color: white;
 }
 
 .cart_buy_form > input {
@@ -1162,7 +1332,79 @@ summary {
   height: 45px;
 }
 
+.cart_buy_form > .input_button {
+  border: 1px solid #A4A4A4;
+  background-color: white;
+  padding: 9px 15px;
+  width: 120px;
+  height: auto;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cart_buy_form > .input_button:hover {
+  background-color: #E05C6E;
+  color: white;
+}
+
 .cart_buy {
   width: 32%;
+}
+
+.total-buy {
+  height: 214px;
+  width: 100%;
+  background-color: #F5F3F3;
+  padding: 40px 44px;
+}
+
+.total-buy > .sub_total {
+  text-align: right;
+  font-family: "Lato";
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  margin-bottom: 12px;
+}
+
+.total-buy > .grand_total {
+  text-align: right;
+  font-family: "Lato";
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-bottom: 21px;
+}
+
+.total-buy > .grand_total span {
+  color: #E05C6E;
+}
+
+.total-buy > a {
+  text-decoration: none;
+}
+
+.total-buy > a > .button {
+  padding: 15px;
+  text-align: center;
+  background-color: #E05C6E;
+  color: white;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 17px;
+  -webkit-transition: 0,3s;
+  transition: 0,3s;
+}
+
+.total-buy > a > .button:hover {
+  background-color: white;
+  color: #E05C6E;
 }
 /*# sourceMappingURL=style.css.map */
