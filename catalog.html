@@ -18,7 +18,7 @@
 <body>
     <nav class="top_block ">
         <div class="top_block_menu contaner_me">
-            <div class="top_block_menu_1">
+            <div class="top_block_menu_1 con_left_padding">
                 <a class="menu_1_item bounce-top" href="index.html"><img src="img/logo.svg"
                         alt="На главную страницу"></a>
                 <a class="menu_1_item" href="#"><svg width="27" height="28" viewBox="0 0 27 28"
@@ -28,7 +28,7 @@
                     </svg></a>
             </div>
 
-            <div class="top_block_menu_2">
+            <div class="top_block_menu_2 con_right_padding">
 
                 <details>
                     <summary> <svg width="32" height="23" viewBox="0 0 32 23" xmlns="http://www.w3.org/2000/svg">
@@ -77,7 +77,7 @@
     </nav>
     <nav class="top_block_bot">
         <div class="top_block_header contaner_me">
-            <div class="cat_header_background padding_230">
+            <div class="cat_header_background con_padding">
                 <div>
                     <p class="catalog_man_n_a">NEW ARRIVALS </p>
                 </div>
@@ -91,7 +91,7 @@
             </div>
         </div>
     </nav>
-    <div class="mid_block_cat contaner_me padding_230">
+    <div class="mid_block_cat contaner_me con_padding">
         <div class="display-flex">
             <details>
                 <summary>
@@ -180,31 +180,61 @@
             </details>
         </div>
         <div class="display-flex">
-            <div class="display-flex">
+            <a class="display-flex" href="#">
                 <p>
                     TRENDING NOW
                 </p>
                 <i class="fa fa-solid fa-angle-down arrow-down"></i>
-            </div>
-            <div class="display-flex">
-                <p>
-                    SIZE
-                </p>
-                <i class="fa fa-solid fa-angle-down arrow-down"></i>
-            </div>
-            <div class="display-flex">
-                <p>
-                    PRICE
-                </p>
-                <i class="fa fa-solid fa-angle-down arrow-down"></i>
-            </div>
+            </a>
+
+            <details>
+                <summary>
+                    <div class="param">
+                        <div class="display-flex param">
+                            <p>
+                                SIZE
+                            </p>
+                            <i class="fa fa-solid fa-angle-down arrow-down"></i>
+                        </div>
+                    </div>
+                </summary>
+                <div class="param_hover">
+                    <div class="param_select">
+                        <input type="checkbox" id="xs"><label for="xs">XS</label><br>
+                        <input type="checkbox" id="s"><label for="s">S</label><br>
+                        <input type="checkbox" id="m"><label for="m">M</label><br>
+                        <input type="checkbox" id="l"><label for="l">L</label><br>
+                        <input type="checkbox" id="xl"><label for="xl">XL</label>
+                    </div>
+                </div>
+            </details>
+            <details>
+                <summary>
+                    <div class="param">
+                        <div class="display-flex param">
+                            <p>
+                                PRICE
+                            </p>
+                            <i class="fa fa-solid fa-angle-down arrow-down"></i>
+                        </div>
+                    </div>
+                </summary>
+                <div class="param_hover">
+                    <div class="param_select">
+                        <label for="volume">min price</label><br>
+                        <input type="range" id="volume" name="mim Price" min="0" max="100000" step="100"><br>
+                        <label for="cowbell">max price</label><br>
+                        <input type="range" id="cowbell" name="max Price" min="0" max="100000" step="100">
+                    </div>
+                </div>
+            </details>
         </div>
         <div>
 
         </div>
     </div>
     <section class="con_block contaner_me ">
-        <div class="con_block_items padding_230">
+        <div class="con_block_items con_padding">
             <div class="con_block_cards">
                 <a class="item-link" href="product.html">
                     <img class="con_block_cards_img" src="img/items/tovar_01.png" alt="ELLERY X M'O CAPSULE">
@@ -318,13 +348,13 @@
             <nav aria-label="Page navigation example">
                 <ul class="pagination justify-content-center">
                     <li class="page-item disabled">
-                        <a class="page-link">Previous</a>
+                        <a class="page-link"><i class="fa fa-solid fa-chevron-left"></i></a>
                     </li>
                     <li class="page-item"><a class="page-link" href="#">1</a></li>
                     <li class="page-item"><a class="page-link" href="#">2</a></li>
                     <li class="page-item"><a class="page-link" href="#">3</a></li>
                     <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
+                        <a class="page-link" href="#"><i class="fa fa-solid fa-chevron-right"></i></a>
                     </li>
                 </ul>
             </nav>
@@ -333,7 +363,7 @@
     <footer class="footer_block">
         <div class="footer_block_top">
             <div class="contaner_me">
-                <div class=" footer_block_top_items padding_230">
+                <div class=" footer_block_top_items con_padding">
                     <div class="footer_block_top_item">
                         <img class="footer_top_img" src="img/Forma_01.svg" alt="">
                         <p class="footer_top_name">Free Delivery</p>
@@ -392,10 +422,10 @@
         </div>
         <div class="footer_block_bot">
             <div class="contaner_me flex">
-                <div class="footer_bot_arr">
+                <div class="footer_bot_arr con_left_padding">
                     <p class="footer_bot_arr_text">© 2021 Brand All Rights Reserved.</p>
                 </div>
-                <div class="footer_bot_links">
+                <div class="footer_bot_links con_right_padding">
                     <a class="footer_bot_link" href="">
                         <i class="fa fa-brands fa-facebook-f"></i>
                     </a>
