@@ -2095,4 +2095,85 @@ summary {
     margin-top: 5%;
   }
 }
+
+@media (min-width: 1600px) {
+  .contaner_me {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  .con_left_padding {
+    padding-left: 230px;
+  }
+  .con_right_padding {
+    padding-right: 230px;
+  }
+  .con_padding {
+    padding-left: 230px;
+    padding-right: 230px;
+  }
+  .cart_block > .tovar > .text > .name {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .cart_block > .tovar > .text > .prop {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .quantity {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .cart_block > .button_block > a > .button {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cart_buy_form > h4 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .cart_buy_form > input {
+    margin-bottom: 20px;
+    padding-left: 17px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    border: 1px solid #A4A4A4;
+    border-radius: 1px;
+    width: 100%;
+    height: 45px;
+    outline: none;
+  }
+  .cart_buy_form > .input_button {
+    border: 1px solid #A4A4A4;
+    background-color: white;
+    padding: 9px 15px;
+    width: 120px;
+    height: auto;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #4A4A4A;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .total-buy > .sub_total {
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .total-buy > .grand_total {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .total-buy > .grand_total span {
+    color: #E05C6E;
+  }
+  .total-buy > a > .button {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
