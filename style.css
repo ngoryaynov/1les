@@ -858,6 +858,12 @@ summary {
   text-align: center;
 }
 
+.con_block_box_text {
+  height: 100%;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
 .con_block_cards_block {
   width: 100%;
   -webkit-transition: 0.3s;
@@ -873,14 +879,12 @@ summary {
 .con_block_cards_name {
   padding-left: 18px;
   padding-right: 18px;
-  margin-top: 25px;
   margin-bottom: 13px;
   font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 16px;
-  /* identical to box height */
   color: #000000;
 }
 
@@ -905,7 +909,6 @@ summary {
   line-height: 19px;
   color: #F16D7F;
   margin-top: 18px;
-  margin-bottom: 20px;
 }
 
 .con_block_button {
