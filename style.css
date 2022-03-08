@@ -538,14 +538,14 @@ summary {
 }
 
 .cat_filter {
-  z-index: 3;
+  z-index: 2;
   position: relative;
   -webkit-transition: 00.3s;
   transition: 00.3s;
 }
 
 .param {
-  z-index: 3;
+  z-index: 2;
   position: relative;
   -webkit-transition: 00.3s;
   transition: 00.3s;
@@ -1821,9 +1821,15 @@ summary {
     line-height: 100%;
     margin-top: 5%;
   }
+  .param_select {
+    left: 56%;
+  }
+  .cat_filter_hover {
+    top: 223px;
+  }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 435px) {
   .contaner_me {
     max-width: 375px;
     margin: 0 auto;
@@ -1995,7 +2001,8 @@ summary {
     margin-right: 18px;
   }
   .cat_filter_hover {
-    width: 92%;
+    width: 100vw;
+    left: 0;
   }
   .param_select {
     left: 56%;
